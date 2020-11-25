@@ -6,7 +6,15 @@ namespace CalendrierPisteScraping
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Please enter to scrap");
+            Console.ReadLine();
+            Scraper s = new Scraper();
+            s.ScrapeWebsite($"https://www.calendrier-piste.fr/circuit/9-Ales");
+
+            Console.WriteLine("Please enter to scrap");
+            Console.ReadLine();
         }
+
     }
+
 }
